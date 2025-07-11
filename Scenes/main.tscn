@@ -1,0 +1,118 @@
+[gd_scene load_steps=12 format=3 uid="uid://c6d3e7tmevio1"]
+
+[ext_resource type="Texture2D" uid="uid://dpq7wra56qotj" path="res://Assets/Blender/Wood-2947.jpg" id="2_p1ajp"]
+[ext_resource type="Shader" path="res://psx.gdshader" id="3_l3knv"]
+[ext_resource type="PackedScene" uid="uid://b0a646pa5lk65" path="res://Scenes/apparatus.tscn" id="3_v5clc"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_pqai4"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_uinr1"]
+sky_material = SubResource("ProceduralSkyMaterial_pqai4")
+
+[sub_resource type="Environment" id="Environment_51ixh"]
+background_mode = 1
+sky = SubResource("Sky_uinr1")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4prqs"]
+resource_name = "wood"
+cull_mode = 2
+albedo_color = Color(0.970595, 0.970595, 3.85046e-06, 1)
+albedo_texture = ExtResource("2_p1ajp")
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_56gvp"]
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2.00001),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0, 2, 0, 7, 0, 3, 0, 2, 0, 6, 0, 7, 0, 6, 0, 5, 0, 7, 0, 6, 0, 4, 0, 5, 0, 4, 0, 1, 0, 5, 0, 4, 0, 0, 0, 1, 0, 2, 0, 4, 0, 6, 0, 2, 0, 0, 0, 4, 0, 7, 0, 1, 0, 3, 0, 7, 0, 5, 0, 1, 0),
+"name": "wood",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray(0, 0, 0, 0, 254, 255, 0, 0, 0, 0, 255, 255, 254, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 255, 255, 0, 0, 254, 255, 0, 0, 255, 255, 255, 255, 254, 255, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_d67qf"]
+resource_name = "guess_Cube_001"
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2.00001),
+"attribute_data": PackedByteArray(167, 57, 217, 113, 228, 205, 56, 104, 167, 57, 217, 113, 154, 115, 4, 0, 73, 72, 252, 231, 154, 115, 4, 0, 55, 52, 130, 123, 112, 193, 56, 104, 55, 52, 130, 123, 4, 0, 133, 14, 6, 19, 252, 231, 4, 0, 133, 14, 119, 64, 122, 129, 228, 205, 204, 154, 73, 72, 119, 9, 154, 115, 250, 255, 73, 72, 175, 15, 73, 72, 173, 15, 150, 56, 137, 137, 112, 193, 204, 154, 39, 19, 119, 9, 4, 0, 77, 234, 6, 19, 175, 15, 39, 19, 173, 15),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray(2, 0, 11, 0, 5, 0, 2, 0, 8, 0, 11, 0, 6, 0, 21, 0, 9, 0, 6, 0, 18, 0, 21, 0, 20, 0, 17, 0, 23, 0, 20, 0, 14, 0, 17, 0, 12, 0, 3, 0, 15, 0, 12, 0, 0, 0, 3, 0, 7, 0, 13, 0, 19, 0, 7, 0, 1, 0, 13, 0, 22, 0, 4, 0, 10, 0, 22, 0, 16, 0, 4, 0),
+"material": SubResource("StandardMaterial3D_4prqs"),
+"name": "wood",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray(0, 0, 0, 0, 254, 255, 142, 133, 0, 0, 0, 0, 254, 255, 84, 213, 0, 0, 0, 0, 254, 255, 29, 192, 0, 0, 255, 255, 254, 255, 32, 172, 0, 0, 255, 255, 254, 255, 84, 213, 0, 0, 255, 255, 254, 255, 41, 192, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 84, 213, 0, 0, 0, 0, 0, 0, 19, 192, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 84, 213, 0, 0, 255, 255, 0, 0, 29, 192, 255, 255, 0, 0, 254, 255, 32, 172, 255, 255, 0, 0, 254, 255, 84, 213, 255, 255, 0, 0, 254, 255, 255, 255, 255, 255, 255, 255, 254, 255, 179, 210, 255, 255, 255, 255, 254, 255, 84, 213, 255, 255, 255, 255, 254, 255, 255, 255, 255, 255, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0, 0, 0, 84, 213, 255, 255, 0, 0, 0, 0, 255, 255, 255, 255, 255, 255, 0, 0, 255, 255, 255, 255, 255, 255, 0, 0, 84, 213, 255, 255, 255, 255, 0, 0, 255, 255, 255, 255, 255, 255, 170, 42, 84, 213, 198, 121, 140, 243, 255, 255, 255, 255, 170, 170, 170, 170, 202, 120, 148, 241, 196, 207, 196, 79, 170, 42, 84, 213, 203, 122, 151, 245, 255, 78, 254, 206, 170, 170, 170, 170, 198, 121, 140, 243, 255, 255, 255, 255, 170, 42, 84, 213, 255, 191, 255, 127, 255, 255, 255, 255, 170, 170, 170, 170, 255, 191, 255, 127, 98, 247, 99, 119, 170, 42, 84, 213, 255, 191, 255, 127, 196, 207, 196, 79, 170, 170, 170, 170, 255, 191, 255, 127)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_56gvp")
+
+[sub_resource type="QuadMesh" id="QuadMesh_8hfm4"]
+flip_faces = true
+size = Vector2(2, 2)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rnbep"]
+render_priority = 0
+shader = ExtResource("3_l3knv")
+shader_parameter/enable_fog = true
+shader_parameter/fog_color = Color(0, 0.0522289, 0.393196, 1)
+shader_parameter/noise_color = null
+shader_parameter/fog_distance = 100.0
+shader_parameter/fog_fade_range = 50.0
+shader_parameter/enable_noise = true
+shader_parameter/noise_time_fac = 4.0
+shader_parameter/enable_color_limitation = true
+shader_parameter/color_levels = 64
+shader_parameter/enable_dithering = true
+shader_parameter/dither_strength = 0.673
+shader_parameter/enable_luminance_threshold = true
+shader_parameter/luminance_threshold = 0.037
+
+[node name="Game" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_51ixh")
+
+[node name="guess2" type="Node3D" parent="."]
+
+[node name="Cube_001" type="MeshInstance3D" parent="guess2"]
+transform = Transform3D(5.11232, 0, 0, 0, 0.215162, 0, 0, 0, 3.3424, 0, 3.4789, 0)
+mesh = SubResource("ArrayMesh_d67qf")
+skeleton = NodePath("")
+
+[node name="Camera" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, -0.113203, 0.993572, 0, 0.993572, 0.113203, -1, 4.94827e-09, -4.34304e-08, 6.22, 5.768, 0)
+fov = 60.0
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.15196, 12.7048, 2.38419e-07)
+light_energy = 4.232
+shadow_enabled = true
+spot_range = 18.2759
+spot_attenuation = 1e-05
+spot_angle_attenuation = 23.2697
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="."]
+transform = Transform3D(0.8271, -2.45682e-08, 0.562055, -0.562055, -3.61537e-08, 0.8271, 0, -1, -4.37114e-08, 10.0885, 12.7055, 0)
+light_energy = 1.969
+shadow_enabled = true
+spot_range = 18.2759
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.79236, 12.741, 10.8173)
+visible = false
+cast_shadow = 0
+extra_cull_margin = 16384.0
+mesh = SubResource("QuadMesh_8hfm4")
+surface_material_override/0 = SubResource("ShaderMaterial_rnbep")
+
+[node name="Apparatus" parent="." instance=ExtResource("3_v5clc")]
