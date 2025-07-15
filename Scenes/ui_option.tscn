@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3l8u0f2dcr8e"]
+
+[ext_resource type="Texture2D" uid="uid://y7gyaj60hghb" path="res://Assets/UI/box.png" id="1_8yskc"]
+[ext_resource type="LabelSettings" uid="uid://bava78vyerhgl" path="res://Assets/UI/ui_select_label_settings.tres" id="2_50xwc"]
+[ext_resource type="Script" path="res://Scripts/ui_option.gd" id="2_f147w"]
+
+[node name="TextureButton" type="TextureButton"]
+texture_filter = 1
+texture_normal = ExtResource("1_8yskc")
+stretch_mode = 0
+script = ExtResource("2_f147w")
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 3
+layout_mode = 0
+offset_left = 6.0
+offset_top = 1.0
+offset_right = 46.0
+offset_bottom = 23.0
+text = "Query"
+label_settings = ExtResource("2_50xwc")

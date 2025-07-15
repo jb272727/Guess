@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cqctlfvavh254"]
+[gd_scene load_steps=7 format=3 uid="uid://cqctlfvavh254"]
 
 [ext_resource type="Texture2D" uid="uid://b4idlohr00rpg" path="res://Assets/Blender/caRD.png" id="1_23x35"]
 [ext_resource type="Script" path="res://Scripts/Attributes.gd" id="2_sc5jh"]
@@ -42,6 +42,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_0r1gp")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_a0d5w"]
+size = Vector3(1.8736, 0.015, 1.96918)
+
 [node name="Plane" type="MeshInstance3D"]
 transform = Transform3D(0.0370347, 0.990493, 0, -0.365776, 0.100287, 0, 0, 0, 0.200712, -0.00445294, 0.354758, -0.201388)
 mesh = SubResource("ArrayMesh_anp6y")
@@ -55,3 +58,9 @@ spot_angle = 31.3373
 
 [node name="Attributes" type="Node3D" parent="."]
 script = ExtResource("2_sc5jh")
+
+[node name="Card Static Body" type="StaticBody3D" parent="."]
+
+[node name="Card Collision Shape" type="CollisionShape3D" parent="Card Static Body"]
+transform = Transform3D(1, 2.98023e-08, 0, -1.9744e-07, 0.999997, 0, 0, 0, 1, -0.0067504, -1.11759e-08, 0.00753796)
+shape = SubResource("BoxShape3D_a0d5w")
