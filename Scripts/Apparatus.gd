@@ -1,7 +1,7 @@
 extends Node3D
 class_name Apparatus
 
-@export var num_cards : int = 20
+@export var num_cards : int = 3
 const CardScene = preload("res://Scenes/card.tscn")
 @onready var test_position_1 = $"Test Position 1"
 
@@ -31,7 +31,7 @@ func _ready():
 
 		Globals.data[cardBody] = {
 			"Position": i,
-			"Hair": attr.hair_type,
+			"Hair": attr.hair,
 			"Hat": attr.hat,
 			"Eyes": attr.eyes,
 			"Ears": attr.ears ,

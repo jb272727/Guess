@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://bwb4bbwepp7rg"]
+[gd_scene load_steps=2 format=3 uid="uid://bwb4bbwepp7rg"]
 
 [ext_resource type="Script" path="res://Scripts/card_select.gd" id="1_r8rhl"]
-[ext_resource type="PackedScene" uid="uid://c3l8u0f2dcr8e" path="res://Scenes/ui_option.tscn" id="1_sphvt"]
 
 [node name="card select" type="Control"]
 layout_mode = 3
@@ -18,5 +17,5 @@ offset_right = 133.0
 offset_bottom = 53.0
 theme_override_constants/separation = 0
 
-[node name="TextureButton" parent="VBoxContainer" instance=ExtResource("1_sphvt")]
-layout_mode = 2
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

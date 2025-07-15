@@ -123,13 +123,13 @@ surface_material_override/0 = SubResource("ShaderMaterial_rnbep")
 
 [node name="Apparatus" parent="." instance=ExtResource("3_v5clc")]
 
-[node name="Test Position 1" type="Node3D" parent="Apparatus"]
+[node name="Test Position 0" type="Node3D" parent="Apparatus"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.54994, 1.19731)
 
-[node name="Test Position 2" type="Node3D" parent="Apparatus"]
+[node name="Test Position 1" type="Node3D" parent="Apparatus"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.54994, 0.247692)
 
-[node name="Test Position 3" type="Node3D" parent="Apparatus"]
+[node name="Test Position 2" type="Node3D" parent="Apparatus"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.54994, -1.12804)
 
 [connection signal="ui_select" from="Game Manager" to="Game Manager" method="_on_ui_select"]
