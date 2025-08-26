@@ -15,7 +15,7 @@ class_name Attributes
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var hair_size = CharacterFeatures.Hair.size()
+	var hair_size = CharacterFeatures.Hat.size()
 	print(hair_size)
 	print(hair)
 

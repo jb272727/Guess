@@ -6,6 +6,11 @@
 
 [node name="TextureButton" type="TextureButton"]
 texture_filter = 1
+anchors_preset = -1
+anchor_right = 0.115
+anchor_bottom = 0.032
+offset_right = -132.48
+offset_bottom = -20.736
 texture_normal = ExtResource("1_m3dso")
 stretch_mode = 0
 script = ExtResource("2_f147w")
